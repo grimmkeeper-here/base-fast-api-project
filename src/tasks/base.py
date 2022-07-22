@@ -20,7 +20,7 @@ class TaskService:
         track_started: bool = True
         task_track_started: bool = True
         result_extended: bool = True
-        imports: list = ["src.tasks.job", "src.tasks.cron", "src.app.services.am_ads"]
+        imports: list = ["src.tasks.job", "src.tasks.cron"]
 
     @classmethod
     def init_celery(cls) -> None:
